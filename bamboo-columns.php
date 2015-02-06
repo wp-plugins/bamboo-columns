@@ -5,7 +5,7 @@
 	Plugin URI:  http://www.bamboosolutions.co.uk/wordpress/bamboo-columns
 	Author:      Bamboo Solutions
 	Author URI:  http://www.bamboosolutions.co.uk
-	Version:     1.2
+	Version:     1.3
 	Description: This plugin provides several shortcodes for organising your content into multi-column layouts. It supports two, three and four column layouts and allows for content to span multiple columns if required.
 */
 /******************************************************************/
@@ -70,7 +70,13 @@
 	function bamboo_column_half_1( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-half first\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-half first\">$content</div>";
 
 		return $html;
 
@@ -81,7 +87,13 @@
 	function bamboo_column_half_2( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-half second\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-half second\">$content</div>";
 
 		return $html;
 
@@ -92,7 +104,13 @@
 	function bamboo_column_third_1( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-third first\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-third first\">$content</div>";
 
 		return $html;
 
@@ -103,7 +121,13 @@
 	function bamboo_column_third_2( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-third second\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-third second\">$content</div>";
 
 		return $html;
 
@@ -114,7 +138,13 @@
 	function bamboo_column_third_3( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-third third\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-third third\">$content</div>";
 
 		return $html;
 
@@ -125,7 +155,13 @@
 	function bamboo_column_third_1_2( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-third first-second\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-third first-second\">$content</div>";
 
 		return $html;
 
@@ -136,7 +172,13 @@
 	function bamboo_column_third_2_3( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-third second-third\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-third second-third\">$content</div>";
 
 		return $html;
 
@@ -147,7 +189,13 @@
 	function bamboo_column_quarter_1( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter first\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter first\">$content</div>";
 
 		return $html;
 
@@ -158,7 +206,13 @@
 	function bamboo_column_quarter_2( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter second\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter second\">$content</div>";
 
 		return $html;
 
@@ -169,7 +223,13 @@
 	function bamboo_column_quarter_3( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter third\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter third\">$content</div>";
 
 		return $html;
 
@@ -180,7 +240,13 @@
 	function bamboo_column_quarter_4( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter fourth\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter fourth\">$content</div>";
 
 		return $html;
 
@@ -191,7 +257,13 @@
 	function bamboo_column_quarter_1_2( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter first-second\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter first-second\">$content</div>";
 
 		return $html;
 
@@ -202,7 +274,13 @@
 	function bamboo_column_quarter_1_2_3( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter first-second-third\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter first-second-third\">$content</div>";
 
 		return $html;
 
@@ -213,7 +291,13 @@
 	function bamboo_column_quarter_2_3( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter second-third\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter second-third\">$content</div>";
 
 		return $html;
 
@@ -224,7 +308,13 @@
 	function bamboo_column_quarter_2_3_4( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter second-third-fourth\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter second-third-fourth\">$content</div>";
 
 		return $html;
 
@@ -235,7 +325,13 @@
 	function bamboo_column_quarter_3_4( $atts, $content=null ) {
 
 		$content = do_shortcode( $content );
-		$html = "<div class=\"column-quarter third-fourth\">$content</div>";
+
+		$style = '';
+		if( isset( $atts['background'] ) ) {
+			$style = 'style="background-color:#' . $atts['background'] . '" ';
+		}
+
+		$html = "<div {$style}class=\"column-quarter third-fourth\">$content</div>";
 
 		return $html;
 

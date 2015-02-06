@@ -3,8 +3,8 @@ Contributors: Bamboo Solutions
 Donate link: http://www.bamboosolutions.co.uk
 Tags: columns, layout, shortcodes
 Requires at least: 3.0.1
-Tested up to: 4.1
-Stable tag: 1.2
+Tested up to: 4.0
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,11 @@ If you want content to span multiple columns you can combine the shortcodes to c
      [column-quarter-4]
      Third column of content that occupies the fourth quarter column
      [/column-quarter-4]
+
+You can also change the background colour of a colour by adding an attribute to the shortcode as follows:
+
+     [column-half-1 background="e8e8e8"]
+
 
 == Installation ==
 
