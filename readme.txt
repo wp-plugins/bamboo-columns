@@ -94,6 +94,9 @@ e.g.
 
 == Changelog ==
 
+= 1.3 =
+* Added the background attribute
+
 = 1.2 =
 * Rebrand from Noodle to Bamboo
 
