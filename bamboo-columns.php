@@ -5,7 +5,7 @@
 	Plugin URI:  http://www.bamboosolutions.co.uk/wordpress/bamboo-columns
 	Author:      Bamboo Solutions
 	Author URI:  http://www.bamboosolutions.co.uk
-	Version:     1.3
+	Version:     1.4
 	Description: This plugin provides several shortcodes for organising your content into multi-column layouts. It supports two, three and four column layouts and allows for content to span multiple columns if required.
 */
 /******************************************************************/
@@ -37,7 +37,11 @@
 
 	function bamboo_columns_styles() {
 
-		wp_enqueue_style( 'bamboo-columns', plugins_url( '', __FILE__) . '/bamboo-columns.css' );
+		if( function_exists( 'bamboo_enqueue_style' ) ) {
+			bamboo_enqueue_style( 'bamboo-columns', plugins_url( '', __FILE__) . '/bamboo-columns.css' );
+		} else {
+			wp_enqueue_style( 'bamboo-columns', plugins_url( '', __FILE__) . '/bamboo-columns.css' );
+		}
 
 	}
 

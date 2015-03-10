@@ -4,7 +4,7 @@ Donate link: http://www.bamboosolutions.co.uk
 Tags: columns, layout, shortcodes
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,8 +94,11 @@ e.g.
 
 == Changelog ==
 
+= 1.4 =
+* Makes use of the non-blocking CSS method provided by Bamboo themes if available.
+
 = 1.3 =
-* Added the background attribute
+* Added 'background' shortcode attribute
 
 = 1.2 =
 * Rebrand from Noodle to Bamboo
