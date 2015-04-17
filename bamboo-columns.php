@@ -5,7 +5,7 @@
 	Plugin URI:  http://www.bamboosolutions.co.uk/wordpress/bamboo-columns
 	Author:      Bamboo Solutions
 	Author URI:  http://www.bamboosolutions.co.uk
-	Version:     1.4
+	Version:     1.5
 	Description: This plugin provides several shortcodes for organising your content into multi-column layouts. It supports two, three and four column layouts and allows for content to span multiple columns if required.
 */
 /******************************************************************/
@@ -32,6 +32,27 @@
 	add_shortcode( 'column-quarter-2',     	'bamboo_column_quarter_2' );
 	add_shortcode( 'column-quarter-3',     	'bamboo_column_quarter_3' );
 	add_shortcode( 'column-quarter-4',     	'bamboo_column_quarter_4' );
+
+	add_shortcode( 'inner-column-half-1',	'bamboo_column_half_1' );
+	add_shortcode( 'inner-column-half-2',	'bamboo_column_half_2' );
+
+	add_shortcode( 'inner-column-third-1-2',	'bamboo_column_third_1_2' );
+	add_shortcode( 'inner-column-third-2-3', 	'bamboo_column_third_2_3' );
+	add_shortcode( 'inner-column-third-1',		'bamboo_column_third_1' );
+	add_shortcode( 'inner-column-third-2',		'bamboo_column_third_2' );
+	add_shortcode( 'inner-column-third-3',		'bamboo_column_third_3' );
+
+	add_shortcode( 'inner-column-quarter-1-2-3',	'bamboo_column_quarter_1_2_3' );
+	add_shortcode( 'inner-column-quarter-1-2',   	'bamboo_column_quarter_1_2' );
+	add_shortcode( 'inner-column-quarter-2-3-4', 	'bamboo_column_quarter_2_3_4' );
+	add_shortcode( 'inner-column-quarter-2-3',   	'bamboo_column_quarter_2_3' );
+	add_shortcode( 'inner-column-quarter-3-4',   	'bamboo_column_quarter_3_4' );
+	add_shortcode( 'inner-column-quarter-1',     	'bamboo_column_quarter_1' );
+	add_shortcode( 'inner-column-quarter-2',     	'bamboo_column_quarter_2' );
+	add_shortcode( 'inner-column-quarter-3',     	'bamboo_column_quarter_3' );
+	add_shortcode( 'inner-column-quarter-4',     	'bamboo_column_quarter_4' );
+
+
 
 /******************************************************************/
 
@@ -81,7 +102,6 @@
 		}
 
 		$html = "<div {$style}class=\"column-half first\">$content</div>";
-
 		return $html;
 
 	}
